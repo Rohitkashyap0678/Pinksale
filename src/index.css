@@ -1,0 +1,232 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.primaryText,
+.css-1a4cg4j-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #f95192 !important;
+}
+
+.css-1a4cg4j-MuiButtonBase-root-MuiTab-root {
+  padding: 7px 14px !important;
+  min-height: 48px !important;
+  min-width: 40px !important;
+  text-transform: capitalize !important;
+}
+
+.hoverborder:hover,
+.primaryBackgroundActive {
+  border-right: 2px solid #f95192 !important;
+  background: #fdeaf1 !important;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  background-color: #f95192 !important;
+}
+
+.primaryBackgroundActive {
+  border-right: 2px solid #f95192 !important;
+}
+
+.hoverborder {
+  border-right: 2px solid transparent !important;
+}
+
+.primary-hover-text:hover {
+  color: #f95192;
+}
+
+.primaryBackground {
+  background: #fdeaf1;
+}
+
+.listItemButton {
+  border-right: 2px solid #f95192;
+}
+
+.paper-scrollbar > div::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 6px !important;
+}
+
+.paper-scrollbar > div::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px !important;
+}
+
+.paper-scrollbar > div::-webkit-scrollbar-thumb {
+  background: #bebebe;
+  border-radius: 6px !important;
+}
+
+.paper-scrollbar > div::-webkit-scrollbar-thumb:hover {
+  background: #aeaeae;
+  border-radius: 6px !important;
+}
+
+.paper-scrollbar-trending::-webkit-scrollbar {
+  display: none !important;
+}
+
+a,
+.wordBreak {
+  word-break: break-word !important;
+}
+
+@media (min-width: 600px) {
+  .mobile-header-height, .top-up-mobile-header {
+    top: 64px !important;
+  }
+}
+
+.mobile-header-height , .top-up-mobile-header {
+  top: 48px;
+}
+
+.mobile-header-animation {
+  animation: slide-top 0.8s ease;
+  position: absolute;
+  /* top: 64px; */
+  left: 0px;
+  width: 100%;
+  z-index: 9;
+  color: black;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 360px) {
+  .text-small {
+    font-size: 13px !important;
+  }
+  .text-none-mobile {
+    display: none;
+  }
+}
+
+.comment {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.comment__logo {
+  background-color: #f95192;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 15px;
+}
+
+.comment__form {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment__form_login > div > input,
+.comment__form > input {
+  border: 1px solid #c2c6cc;
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #71828d;
+}
+
+.comment__form_login {
+  display: flex;
+  gap: 16px;
+}
+
+.comment__form_login > div > p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #71828d;
+}
+
+.comment__form_login > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.comment__form_login > div > input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.comment__form_login > div > input + p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #687a86;
+}
+
+.comment__form_login > div > p a {
+  color: #288ce4;
+}
+
+.disqusLog {
+  height: 16px;
+}
+
+@media screen and (max-width: 640px) {
+  .comment__logo {
+    display: none;
+  }
+
+  .comment__form_login > div > h5 > svg {
+    display: block;
+    height: 40px;
+    width: 100% !important;
+  }
+  .mobile-view-icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .comment__form_login {
+    flex-direction: column;
+  }
+
+  .comments > div > div:first-child {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
